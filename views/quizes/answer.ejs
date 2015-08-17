@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Quiz</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Preguntas</title>
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (min-width: 560px) and (min-device-width: 481px)'
+	      href='/css/wide.css' />
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (max-width: 312px)'
+	      href='/css/smartphone.css' />
+    <link rel='stylesheet' 
+	      type="text/css"
+	      href='/css/default.css' />
+    <link rel='alternate stylesheet' 
+	      title='alternativo fondo'
+	      type="text/css"
+	      href='/css/fondo.css' />
+	<link rel='icon' href='favicon.ico' type='image/x-icon'>
   </head>
   <body>
-	
-	<%= respuesta %><br/>
-    <a href="/quizes/question">Intentelo otra vez</a>
-  </body>
+  <%= respuesta %><br/>
+  <a href="/quizes/question">Intentelo otra vez</a>
+</body>
 </html>

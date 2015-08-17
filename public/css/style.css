@@ -1,0 +1,98 @@
+*                                  { margin: 0; padding: 0; }
+body                            { 
+  font: 16px Georgia, serif; 
+  background-image: url(../img/fondo.jpg);
+}
+
+#page-wrap                { margin: 2% auto; color: white; }
+#page-wrap > .main { border: 1px solid #999; padding: 1%; margin-bottom: 1px; color: black; }
+
+section > div                   { padding: 20px; }
+header, footer, section { background: #eee; text-align: center; }
+nav                                   { background: #eee; text-align: left; }
+nav span                          { margin: 0px 0px 0px 0px; }
+
+.resultados {
+  text-align: right;
+  font-size: 11px;
+  font-family: Helvetica;
+}
+
+.noSmart, .noWide {
+  text-align: center;
+  color: #5F0;
+}
+
+.caja {
+  display: inline-block;
+  overflow: visible;  
+  overflow: scroll;  
+  overflow: auto;  
+  height: 70px;
+  border: thick solid #000;
+}
+
+/* Resultados como quotes */
+blockquote  {
+  quotes: "«««" "»»»" "--" "--";
+}
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+/* Menu vertical */
+nav {
+  width: 6em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-style:   solid;
+  border-right-style: solid;
+  border-left-style:  solid;
+  border-top-color:    #CCC;
+  border-right-color:  #CCC;
+  border-left-color:   #CCC;
+}
+
+nav ul a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9em;
+  display: block;
+  padding: 6px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #CCC;
+  background-color: #EAEAEA;
+}
+
+nav ul a:hover {
+  color: #FFF;
+  background-color: #666;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: #36F;
+}
+
+/* fixed: reparar la separacion en bloques para la vista smartphone*/
+
+.paper-error { 
+  background-image: url("img/404.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.errorFormato {
+  font: 16px Monospace, Georgia, serif; 
+}

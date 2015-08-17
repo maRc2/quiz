@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title><%= title %></title>
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (min-width: 560px) and (min-device-width: 481px)'
+	      href='/css/wide.css' />
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (max-width: 312px)'
+	      href='/css/smartphone.css' />
+    <link rel='stylesheet' 
+	      type="text/css"
+	      href='/css/default.css' />
+    <link rel='alternate stylesheet' 
+	      title='alternativo fondo'
+	      type="text/css"
+	      href='/css/fondo.css' />
 	<link rel='icon' href='favicon.ico' type='image/x-icon'>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h3><span>Autor: <%= author %></span><span><img src="images/author.jpg"></span></h3>
+    <h3>
+	  <span>Autor: <%= author %></span>
+	  <span>
+	    <img src="img/author.jpg" alt="maRc" style="width:140px;height:140px;">
+      </span>
+	</h3>
     <p><%= desc_author %></p>
   </body>
 </html>

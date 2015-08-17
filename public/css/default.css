@@ -1,0 +1,142 @@
+/* Original tamanios >
+
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+	      href='/css/wide.css' />
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (max-width: 480px)'
+	      href='/css/smartphone.css' />
+
+reemplazados por >
+
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (min-width: 560px) and (min-device-width: 481px)'
+	      href='/css/wide.css' />
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (max-width: 312px)'
+	      href='/css/smartphone.css' />
+
+
+*/
+
+*                                  { margin: 0; padding: 0; }
+body                            { 
+  font: 16px Georgia, serif; 
+}
+
+#page-wrap                { margin: 2% auto; color: white; }
+#page-wrap > .main { border: 1px solid #999; padding: 1%; margin-bottom: 1px; color: black; }
+
+section > div                   { padding: 20px; }
+header, footer, section { background: #eee; text-align: center; }
+nav                                   { background: #eee; text-align: left; }
+/*nav span                          { margin: 0px 0px 0px 0px; }*/
+
+.resultados {
+  text-align: right;
+  font-size: 11px;
+  font-family: Helvetica;
+}
+
+.noSmart, .noWide {
+  text-align: center;
+  color: #5F0;
+}
+
+.caja {
+  display: inline-block;
+  overflow: visible;  
+  overflow: scroll;  
+  overflow: auto;  
+  height: 70px;
+  border: thick solid #000;
+}
+
+/* Resultados como quotes */
+blockquote  {
+  quotes: "«««" "»»»" "--" "--";
+}
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+.noDisplay {
+  visibility: hidden;
+}
+
+/* Menu vertical */
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-style:   solid;
+  border-right-style: solid;
+  border-left-style:  solid;
+  border-top-color:    #CCC;
+  border-right-color:  #CCC;
+  border-left-color:   #CCC;
+}
+
+nav ul a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9em;
+  display: block;
+  padding: 6px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #CCC;
+  background-color: #EAEAEA;
+}
+
+nav ul a:hover {
+  color: #FFF;
+  background-color: #666;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: #36F;
+}
+
+/* fixed: reparar la separacion en bloques para la vista smartphone*/
+
+.paper-error { 
+  background-image: url("img/404.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.errorFormato {
+  font: 16px Monospace, Georgia, serif; 
+}
+
+.imgGithub {
+  background: #F5F5F5 url("../img/GitHub16px.png") 0 0 no-repeat;
+  /*background: #FFF no-repeat center center url("data:image/png;base64,iVBORw0KGgo
+AAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQW
+RvYmUgSW1hZ2VSZWFkeXHJZTwAAAHjSURBVDjLdZO/alVBEMZ/5+TemxAbFUUskqAoSOJNp4KC4AsoP
+oGFIHY+gA+jiJXaKIiChbETtBYLUbSMRf6Aydndmfks9kRjvHdhGVh2fvN9uzONJK7fe7Ai6algA3FZ
+CAmQqEF/dnihpK1v7x7dPw0woF64Izg3Xl5s1n9uIe0lQYUFCtjc+sVuEqHBKfpVAXB1vLzQXFtdYPH
+kGFUCoahVo1Y/fnie+bkBV27c5R8A0pHxyhKvPn5hY2MHRQAQeyokFGJze4cuZfav3gLNYDTg7Pklzp
+w4ijtIQYRwFx6BhdjtCk+erU0CCPfg+/o2o3ZI13WUlLGo58YMg+GIY4dmCWkCAAgPzAspJW5ePFPlV
+3VI4uHbz5S5IQfy/yooHngxzFser30iFcNcuAVGw3A0Ilt91IkAsyCXQg5QO0szHEIrogkiguwN2acC
+oJhjnZGKYx4Ujz5WOA2YD1BMU+BBSYVUvNpxkXuIuWgbsOxTHrG3UHIFWIhsgXtQQpTizNBS5jXZQkh
+kcywZqQQlAjdRwiml7wU5xWLaL1AvZa8WIjALzIRZ7YVWDW5CiIj48Z8F2pYLl1ZR0+AuzEX0UX035m
+xIkLq0dhDw5vXL97fr5O3rfwQHJhPx4uuH57f2AL8BfPrVlrs6xwsAAAAASUVORK5CYII=");*/
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  background-position: right;
+}

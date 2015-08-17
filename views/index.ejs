@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
+    <meta charset="utf-8">
+    <title>Preguntas</title>
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (min-width: 560px) and (min-device-width: 481px)'
+	      href='/css/wide.css' />
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (max-width: 312px)'
+	      href='/css/smartphone.css' />
+    <link rel='stylesheet' 
+	      type="text/css"
+	      href='/css/default.css' />
+    <link rel='alternate stylesheet' 
+	      title='alternativo fondo'
+	      type="text/css"
+	      href='/css/fondo.css' />
 	<link rel='icon' href='favicon.ico' type='image/x-icon'>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h3>Bienvenido a <%= title %></h3>
-    <p>El portal donde podra crear sus propios juegos!</p>
-	<!--p><a href="/quizes/question">Comience a jugar</a></p-->
-  </body>
+  <h3>Bienvenido a <%= title %></h3>
+  <p>El portal donde podra crear sus propios juegos!</p>
+  <p class="noWide" style="font-size:32px;"><a href="/quizes/question">Quiz</a></p>
+  <p class="noSmart"><a href="/quizes/question">Comience a jugar</a></p>
+  <table class="noSmart noWide noDisplay hackShow">
+    <% var i; for(i=0; i<quizes.length;i++) { %>
+    <tr>
+    <td>
+      <a href="quizes/question?question='<%= quizes[i].pregunta %>'">
+        <blockquote><%= quizes[i].pregunta %></blockquote>
+      </a>
+    </td>
+    <td>
+      <blockquote><%= quizes[i].respuesta %></blockquote>
+    </td>
+    <tr>
+    <% } %>
+  </table>
+</body>
 </html>

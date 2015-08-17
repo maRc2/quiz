@@ -40,14 +40,20 @@ sequelize.sync().success(function() {
 		if(count === 0) { // la tabla se inicializa solo si esta vacia
 			Quiz.create({
 				pregunta: 'Capital de Italia',
-				respuesta: 'Roma',
+				respuesta: 'Roma'
+			}).success(function(){console.log('Capital de Italia')});
+			Quiz.create({
 				pregunta: 'Quien descubrio America',
-				respuesta: 'Cristobal Colon',
+				respuesta: 'Cristobal Colon'
+			}).success(function(){console.log('Quien descubrio America')});
+			Quiz.create({
 				pregunta: 'Capital de Suecia',
-				respuesta: 'Estocolmo',
+				respuesta: 'Estocolmo'
+			}).success(function(){console.log('Capital de Suecia')});
+			Quiz.create({
 				pregunta: 'Informatico mas guapo',
 				respuesta: 'marc'
-			}).success(function(){console.log('Base de datos inicializada')});
+			}).success(function(){console.log('Muy personal')});
 		};
 	});
 });

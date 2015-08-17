@@ -1,0 +1,18 @@
+body				{ background: #333; }
+
+#page-wrap:after	{ content: "Smartphone Layout"; }
+
+h2 span, section h3	{ display: none; }
+
+body 				{ font-size: xx-large; }
+footer, input			{ font-size: large; }
+
+.noSmart { display: none; }
+
+.orienta-menu-container { display: table; width: 100%;}
+.orienta-menu                    { display: table-row; }
+.orienta-menu-span          { display: table-cell; }
+
+nav span {
+  font-size: xx-small;
+}

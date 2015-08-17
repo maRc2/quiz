@@ -4,36 +4,45 @@
     <meta charset="utf-8">
     <title>Preguntas</title>
     <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (min-width: 560px) and (min-device-width: 481px)'
+	      href='/css/wide.css' />
+    <link rel='stylesheet' 
+	      type='text/css'
+	      media='only screen and (max-width: 312px)'
+	      href='/css/smartphone.css' />
+    <link rel='stylesheet' 
 	      type="text/css"
-	      href='/stylesheets/style.css' />
-    <link rel='stylesheet' 
-	      type='text/css'
-	      media='only screen and (min-width: 530px) and (min-device-width: 481px)'
-	      href='/stylesheets/wide.css' />
-    <link rel='stylesheet' 
-	      type='text/css'
-	      media='only screen and (max-width: 480px)'
-	      href='/stylesheets/smartphone.css' />
+	      href='/css/default.css' />
+    <link rel='alternate stylesheet' 
+	      title='alternativo fondo'
+	      type="text/css"
+	      href='/css/fondo.css' />
+	<link rel='icon' href='favicon.ico' type='image/x-icon'>
   </head>
   <body>
     <div id="page-wrap">
-		<header class="main" id="h1">
+		<header class="main vheader" id="h1">
 		  <h2>Quiz<span>: El juego de las preguntas.</span></h2>
 		</header>
 		
-		<nav class="main" id="n1" role="navigation">
-		  <span><a href="/">Inicio</a></span>
-		  <span><a href="/quizes/question">Preguntas</a></span>
-		  <span><a href="/author">Creditos</a></span>
+		<nav class="main vnav orienta-menu-container" id="n1" role="navigation">
+		<ul class="orienta-menu">
+		  <span class="orienta-menu-span"><a href="/">Inicio</a>                  </span>
+		  <span class="orienta-menu-span"><a href="/quizes/question">Preguntas</a></span>
+		  <span class="orienta-menu-span"><a href="/author">Creditos</a>          </span>
+		  <span class="orienta-menu-span"><a href="/quizes">Busqueda</a>          </span>	
+        </ul>		  
 		</nav>
 		
-		<section class="main" id="s1">
+
+		<section class="main vsection" id="s1">
 		  <div><%- body %></div>
 		</section>
 		
-		<footer class="main" id="f1">
+		<footer class="main vfooder" id="f1">
 		  <span><a href="https://es.wikipedia.org/wiki/Quiz">Que es un Quiz?</a></span>
-		  <span><a href="https://github.com/maRc2/quiz.git"><img src="images/GitHub32px.png"/>Quiz</a></span>
+		  <span><a href="https://github.com/maRc2/quiz.git" class="imgGithub"></a></span>
 		</footer>
 	</div>
   </body>
